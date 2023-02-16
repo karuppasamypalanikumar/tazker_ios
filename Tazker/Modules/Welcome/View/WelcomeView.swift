@@ -26,11 +26,26 @@ class WelcomeView: BaseView {
     }
     
     func initDetails() {
-        if let images = GifHandler.shared.getImages(from: "welcome_logo_1") {
+        if let images = GifHandler.shared.getImages(
+            from: Resources.Gif.welcomeLogoOne.rawValue
+        ) {
             DispatchQueue.main.async {
                 self.logoImageView.animationImages = images
                 self.logoImageView.startAnimating()
+                DispatchQueue.main.asyncAfter(
+                    deadline: .now() + 2) {
+                    self.vc.moveAfterCheck()
+                }
             }
         }
+    }
+    
+    override
+    func prepareEnd() {
+        super.prepareEnd()
+        self.logoImageView.stopAnimating()
+        self.logoImageView.animationImages = nil
+        self.logoImageView.image = nil
+        self.logoImageView.removeFromSuperview()
     }
 }

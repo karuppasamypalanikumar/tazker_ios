@@ -18,13 +18,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="va7-cj-RBv">
-                                <rect key="frame" x="103.5" y="349.5" width="207" height="207"/>
+                                <rect key="frame" x="124" y="370" width="166" height="166"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="va7-cj-RBv" secondAttribute="height" multiplier="1:1" priority="999" id="g4r-5e-NjO"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tazker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dsx-b9-b2K">
-                                <rect key="frame" x="152" y="571.5" width="110.5" height="50"/>
+                                <rect key="frame" x="152" y="551" width="110.5" height="50"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -36,7 +36,7 @@
                             <constraint firstItem="dsx-b9-b2K" firstAttribute="top" secondItem="va7-cj-RBv" secondAttribute="bottom" constant="15" id="6vv-Rl-HTr"/>
                             <constraint firstItem="va7-cj-RBv" firstAttribute="centerY" secondItem="lbA-qR-MG6" secondAttribute="centerY" id="9Lr-cz-jag"/>
                             <constraint firstItem="lbA-qR-MG6" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="dsx-b9-b2K" secondAttribute="bottom" constant="15" id="Tks-xJ-EbX"/>
-                            <constraint firstItem="va7-cj-RBv" firstAttribute="width" secondItem="Pff-8x-2tn" secondAttribute="width" multiplier="0.5" id="YKX-qP-C1P"/>
+                            <constraint firstItem="va7-cj-RBv" firstAttribute="width" secondItem="Pff-8x-2tn" secondAttribute="width" multiplier="0.4" id="YKX-qP-C1P"/>
                             <constraint firstItem="va7-cj-RBv" firstAttribute="centerX" secondItem="lbA-qR-MG6" secondAttribute="centerX" id="dmz-kZ-uVc"/>
                             <constraint firstItem="dsx-b9-b2K" firstAttribute="centerX" secondItem="lbA-qR-MG6" secondAttribute="centerX" id="ggn-6Y-rRu"/>
                             <constraint firstItem="dsx-b9-b2K" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="lbA-qR-MG6" secondAttribute="leading" id="pt0-ES-TUe"/>

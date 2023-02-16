@@ -9,7 +9,6 @@ import UIKit
 
 class BaseVC: UIViewController {
 
-    private
     var baseView: BaseView? {
         get { return self.view as? BaseView }
     }
@@ -29,7 +28,7 @@ class BaseVC: UIViewController {
     override
     func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        self.baseView?.willAppear()
+        self.baseView?.didAppear()
     }
     override
     func viewDidDisappear(_ animated: Bool) {
@@ -46,5 +45,15 @@ class BaseVC: UIViewController {
     func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         self.baseView?.didLayoutSubViews()
+    }
+    
+    override
+    func traitCollectionDidChange(
+        _ previousTraitCollection: UITraitCollection?
+    ) {
+        super.traitCollectionDidChange(
+            previousTraitCollection
+        )
+        self.baseView?.colorChangeDetected()
     }
 }
