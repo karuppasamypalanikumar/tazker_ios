@@ -11,7 +11,7 @@ import SwiftUI
 struct TazkerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            WelcomeView(selection: 0)
         }
     }
 }

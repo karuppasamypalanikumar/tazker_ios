@@ -11,10 +11,10 @@
 		1F278EC829BB291600527AA5 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F278EC729BB291600527AA5 /* Tests_macOS.swift */; };
 		1F278ECA29BB291600527AA5 /* TazkerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F278EA129BB291400527AA5 /* TazkerApp.swift */; };
 		1F278ECB29BB291600527AA5 /* TazkerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F278EA129BB291400527AA5 /* TazkerApp.swift */; };
-		1F278ECC29BB291600527AA5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F278EA229BB291400527AA5 /* ContentView.swift */; };
-		1F278ECD29BB291600527AA5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F278EA229BB291400527AA5 /* ContentView.swift */; };
 		1F278ECE29BB291600527AA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F278EA329BB291600527AA5 /* Assets.xcassets */; };
 		1F278ECF29BB291600527AA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F278EA329BB291600527AA5 /* Assets.xcassets */; };
+		EB9DBC2729BE3A2100F702DC /* WelcomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9DBC2629BE3A2100F702DC /* WelcomeModel.swift */; };
+		EB9DBC2A29BE3A9F00F702DC /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9DBC2929BE3A9F00F702DC /* WelcomeViewModel.swift */; };
 		EB9E3F7F29BE126C006AEC06 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9E3F7E29BE126C006AEC06 /* WelcomeView.swift */; };
 		EB9E3F8129BE12F9006AEC06 /* WelcomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9E3F8029BE12F9006AEC06 /* WelcomePageView.swift */; };
 		EB9E3F8429BE16CF006AEC06 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9E3F8329BE16CF006AEC06 /* Colors.swift */; };
@@ -39,7 +39,6 @@
 
 /* Begin PBXFileReference section */
 		1F278EA129BB291400527AA5 /* TazkerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TazkerApp.swift; sourceTree = "<group>"; };
-		1F278EA229BB291400527AA5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1F278EA329BB291600527AA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F278EA829BB291600527AA5 /* Tazker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tazker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F278EAB29BB291600527AA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,6 +51,8 @@
 		1F278EC329BB291600527AA5 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F278EC729BB291600527AA5 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		1F278EC929BB291600527AA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB9DBC2629BE3A2100F702DC /* WelcomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeModel.swift; sourceTree = "<group>"; };
+		EB9DBC2929BE3A9F00F702DC /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
 		EB9E3F7E29BE126C006AEC06 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		EB9E3F8029BE12F9006AEC06 /* WelcomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePageView.swift; sourceTree = "<group>"; };
 		EB9E3F8329BE16CF006AEC06 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -107,7 +108,6 @@
 				EB9E3F8229BE16BF006AEC06 /* Helpers */,
 				EB9E3F7A29BE120E006AEC06 /* Modules */,
 				1F278EA129BB291400527AA5 /* TazkerApp.swift */,
-				1F278EA229BB291400527AA5 /* ContentView.swift */,
 				1F278EA329BB291600527AA5 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -159,6 +159,31 @@
 			path = "Tests macOS";
 			sourceTree = "<group>";
 		};
+		EB9DBC2429BE33D100F702DC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EB9E3F7E29BE126C006AEC06 /* WelcomeView.swift */,
+				EB9E3F8029BE12F9006AEC06 /* WelcomePageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EB9DBC2529BE3A0600F702DC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EB9DBC2629BE3A2100F702DC /* WelcomeModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EB9DBC2829BE3A8A00F702DC /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				EB9DBC2929BE3A9F00F702DC /* WelcomeViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
 		EB9E3F7A29BE120E006AEC06 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,8 +211,9 @@
 		EB9E3F7D29BE123C006AEC06 /* Welcome */ = {
 			isa = PBXGroup;
 			children = (
-				EB9E3F7E29BE126C006AEC06 /* WelcomeView.swift */,
-				EB9E3F8029BE12F9006AEC06 /* WelcomePageView.swift */,
+				EB9DBC2829BE3A8A00F702DC /* View Model */,
+				EB9DBC2529BE3A0600F702DC /* Models */,
+				EB9DBC2429BE33D100F702DC /* View */,
 			);
 			path = Welcome;
 			sourceTree = "<group>";
@@ -357,9 +383,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB9DBC2729BE3A2100F702DC /* WelcomeModel.swift in Sources */,
 				EB9E3F8129BE12F9006AEC06 /* WelcomePageView.swift in Sources */,
 				EB9E3F8429BE16CF006AEC06 /* Colors.swift in Sources */,
-				1F278ECC29BB291600527AA5 /* ContentView.swift in Sources */,
+				EB9DBC2A29BE3A9F00F702DC /* WelcomeViewModel.swift in Sources */,
 				EB9E3F7F29BE126C006AEC06 /* WelcomeView.swift in Sources */,
 				1F278ECA29BB291600527AA5 /* TazkerApp.swift in Sources */,
 			);
@@ -369,7 +396,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F278ECD29BB291600527AA5 /* ContentView.swift in Sources */,
 				1F278ECB29BB291600527AA5 /* TazkerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
